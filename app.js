@@ -213,7 +213,7 @@ switch (number){
         alert( "Вы отменили выполнение." );
       }*/
 
-      let n=20;
+    /*  let n=20;
 function showPrimes(n) {
   nextPrime: for (let i = 2; i < n; i++) {
 
@@ -224,6 +224,20 @@ function showPrimes(n) {
     alert( i ); // простое
   }
 }
-showPrimes(n);
-      
+showPrimes(n);*/
+
+    let age = prompt('crjkmrj ktn&', 16); 
+    if (age < 18) {
+        function welcome() {     
+        alert("Привет!");      
+        }         
+    welcome();    
+    } else {
+
+        function welcome() {
+        alert("Здравствуйте!");
+        }
+    welcome(); 
+    }
+        
      
