@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  /*  let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+let sum = 0;
+for (let key in salaries){
+    sum+=salaries[key];
+}
+alert(sum); */
+
+
+/*let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+function multiplyNumeric(menu) {
+  for (let key in menu) {
+    if (typeof menu[key] == 'number') {
+        menu[key] *= 2;
+    }
+  }
+}
+multiplyNumeric(menu);
+console.log(menu);*/
+
+/*let user = {
+  name: "Иван",
+  age: 30
+};
+
+let clone = {}; // новый пустой объект
+
+// скопируем все свойства user в него
+for (let key in user) {
+  clone[key] = user[key];
+}
+
+// теперь в переменной clone находится абсолютно независимый клон объекта
+clone.name = "Пётр"; // изменим в нём данные
+
+alert( user.name );
+alert (clone.name);*/
+
+/*let user = {
+  name: "Иван",
+  age: 30
+};
+
+let clone = Object.assign({}, user);
+alert (clone.name);*/
+
+//калькулятор
+
+/*let calculator = {
+  sum() {
+      return this.a + this.b;
+  },
+  mul(){
+      return this.a * this.b;
+  },
+  read(){
+      this.a =+prompt('a',0);
+      this.b =+prompt('b',0);
+  }
+};
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );*/
+
+
+/*function Calculator() {
+
+this.read = function() {
+  this.a = +prompt('a?', 0);
+  this.b = +prompt('b?', 0);
+};
+
+this.sum = function() {
+  return this.a + this.b;
+};
+
+this.mul = function() {
+  return this.a * this.b;
+};
+}
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );*/
+
+
+function Accumulator(startingValue) {
+    this.value = startingValue;
+    this.read=function() {
+    this.value += +prompt('setfg',0);
+};
+
+}
+
+let accumulator = new Accumulator(1); // начальное значение 1
+accumulator.read(); // прибавит ввод prompt к текущему значению
+accumulator.read(); // прибавит ввод prompt к текущему значению
+
+alert(accumulator.value); // выведет сумму этих значений
+    </script>
+</body>
+</html>
