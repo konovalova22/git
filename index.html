@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Вах вах</title>
-    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>что-то на красивом!</h1>
+<script>
+/* На ввод даются три целых числа. Определите, 
+сколько среди них совпадающих. Программа должна 
+вывести одно из чисел: 3 (если все числа совпадают), 2 
+(если два совпадает) или 0 (если все числа различны). */
+
+
+let a = prompt('введи число а');
+let b= prompt('введите число б');
+let c = prompt ('введите число с');
+
+function showMessage(a,b,c){
+    if (a===b && a===c && c===b){
+        alert (3);
+    }
+    else if (a!=b || a!=c || b!=c){
+
+        alert (2);
+    }
+    else{
+        alert(0);
+    }
+}
+showMessage(a,b,c);
+
+</script> 
 </body>
 </html>
