@@ -7,31 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-<script>
-/* На ввод даются три целых числа. Определите, 
-сколько среди них совпадающих. Программа должна 
-вывести одно из чисел: 3 (если все числа совпадают), 2 
-(если два совпадает) или 0 (если все числа различны). */
-
-
-let a = prompt('введи число а');
-let b= prompt('введите число б');
-let c = prompt ('введите число с');
-
-function showMessage(a,b,c){
-    if (a===b && a===c && c===b){
-        alert (3);
-    }
-    else if (a===b && b===c || a===c && b===c || b===c && b===a || a===c && b===a){
-
-        alert (2);
-    }
-    else{
-        alert(0);
-    }
-}
-showMessage(a,b,c);
-
-</script> 
+    
 </body>
 </html>
