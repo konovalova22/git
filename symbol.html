@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Напишите функцию ucFirst(str), возвращающую строку str с заглавным первым символом
+        /*let str ='katya';
+        let str2=str[0].toUpperCase() +str.slice(1);
+        alert (str2);*/
+
+        //не получается
+       /* function checkSpam(str) {
+        let lowerStr = str.toLowerCase();
+        return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+}
+
+        alert( checkSpam('buy ViAgRA now') );
+        alert( checkSpam('free xxxxx') );
+        alert( checkSpam("innocent rabbit") );*/
+
+        /* function truncate(str, maxlength) {
+        return (str.length > maxlength) ?
+        str.slice(0, maxlength - 1) + '…' : str;
+        }
+        alert(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+        alert(truncate("Всем привет!", 20)); */
+        //массивы
+
+        /*Создайте массив styles с элементами «Джаз» и «Блюз».
+        Добавьте «Рок-н-ролл» в конец.
+        Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен работать для массивов с любой длиной.
+        Удалите первый элемент массива и покажите его.
+        Вставьте «Рэп» и «Регги» в начало массива.*/
+
+         /* let styles=['джаз', 'блюз'];
+        styles.push('рок-н-ролл');
+        styles.push('рок-н-ролл');
+        styles [Math.floor(styles.length-2)/2]='классика';
+        alert(styles.shift());
+        styles.unshift('рэп', 'регги');
+        alert (styles);  */
+
+       /* function sumInput() {
+
+        let numbers = [];
+
+        while (true) {
+
+        let value = prompt("Введите число", 0);
+
+        // Прекращаем ввод?
+        if (value === "" || value === null || !isFinite(value)) break;
+
+        numbers.push(+value);
+        }
+
+        let sum = 0;
+        for (let number of numbers) {
+        sum += number;
+        }
+        return sum;
+        }
+
+        alert( sumInput() );*/
+
+        /* let nameFruit = prompt('Название фрукта');
+        let fruits = [{
+            name: 'Яблоко',
+            price: 10
+        },{
+            name: 'Апельсин',
+            price: 1000000
+        },{
+            name: 'Груша',
+            price: 1
+        },{
+            name: 'asdasd',
+            price: 2
+        }];
+        let orange = fruits.find((fruit) => {
+            return fruit.name.toLowerCase() === nameFruit.toLowerCase();
+        });
+        alert(orange.price); */
+
+        /* let arr = [5, 2, 1, -10, 8];
+        arr.sort((a, b) => b-a);
+        alert( arr ); // 8, 5, 2, 1, -10 */
+
+        //калькулятор
+        
+        let powerCalc = new Calculator;
+        powerCalc.addMethod("*", (a, b) => a * b);
+        powerCalc.addMethod("/", (a, b) => a / b);
+        powerCalc.addMethod("**", (a, b) => a ** b);
+
+        let result = powerCalc.calculate("54652 ** 3");
+        alert( result );
+
+        function Calculator() {
+
+        this.methods = {
+        "-": (a, b) => a - b,
+        "+": (a, b) => a + b
+        };
+
+        this.calculate = function(str) {
+
+        let split = str.split(' '),
+            a = +split[0],
+            op = split[1],
+            b = +split[2]
+
+        if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
+
+        return this.methods[op](a, b);
+        }
+
+        this.addMethod = function(name, func) {
+        this.methods[name] = func;
+        };
+        } // 8
+    </script>
+</body>
+</html>
